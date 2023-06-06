@@ -1,0 +1,26 @@
+2023-05-06 20:15:48.756 +03:00 [INF] HTTP GET /swagger/index.html responded 200 in 930.0621 ms
+2023-05-06 20:15:49.458 +03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 397.3197 ms
+2023-05-06 20:15:59.300 +03:00 [INF] HTTP GET /api/Клиентs responded 200 in 261.6198 ms
+2023-05-06 20:17:36.260 +03:00 [INF] HTTP GET /swagger/index.html responded 200 in 682.1588 ms
+2023-05-06 20:17:36.697 +03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 246.0228 ms
+2023-05-06 20:17:41.015 +03:00 [INF] HTTP GET /api/Dogovors responded 200 in 254.3114 ms
+2023-05-06 20:17:42.577 +03:00 [INF] HTTP GET /api/Dogovors responded 200 in 72.7735 ms
+2023-05-06 20:17:42.737 +03:00 [INF] HTTP GET /api/Dogovors responded 200 in 19.6284 ms
+2023-05-06 20:18:01.419 +03:00 [INF] HTTP GET /api/Dogovors/99 responded 404 in 77.7560 ms
+2023-05-06 20:26:44.956 +03:00 [INF] Application started
+2023-05-06 20:26:48.516 +03:00 [INF] Database seeded
+2023-05-06 20:26:48.660 +03:00 [INF] Application stopped
+2023-05-06 20:27:17.181 +03:00 [INF] Application started
+2023-05-06 20:27:20.946 +03:00 [INF] Database seeded
+2023-05-06 20:27:21.083 +03:00 [INF] Application stopped
+2023-05-06 20:30:00.062 +03:00 [INF] Application started
+2023-05-06 20:30:03.684 +03:00 [INF] Database seeded
+2023-05-06 20:30:03.814 +03:00 [INF] Application stopped
+2023-05-06 21:42:08.785 +03:00 [INF] HTTP GET /swagger/index.html responded 200 in 985.9871 ms
+2023-05-06 21:42:09.296 +03:00 [ERR] HTTP GET /swagger/v1/swagger.json responded 500 in 213.4316 ms
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - ASPNetCoreApp.Controllers.AccountController.Register (ASPNetCoreApp). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
